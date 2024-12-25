@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/vintage_background"> <!-- Updated gradient background -->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:fontFamily="@font/alex_brush"
+        android:textSize="32sp"
+        android:layout_margin="16dp"
+        android:textColor="@color/black"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:progressTint="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <ImageView
+                android:id="@+id/music_player_image"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:src="@drawable/musicbg"
+                android:visibility="visible"
+                android:contentDescription="Rotatable Image"
+                />
+            <!-- YouTube Player View -->
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginBottom="24dp"
+                android:elevation="6dp"
+                android:clipToOutline="true"
+                android:visibility="gone"
+                />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/refreshVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/vintage_button_background"
+                android:textColor="@color/white"
+                android:text="Change Song "
+                android:drawableEnd="@drawable/baseline_refresh_24"
+                android:padding="8dp"
+                android:layout_gravity="end"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/watchVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/vintage_button_background"
+                android:textColor="@color/white"
+                android:text="Watch Video "
+                android:drawableEnd="@drawable/baseline_ondemand_video_24"
+                android:padding="8dp"
+                android:layout_gravity="end"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <!-- Seek Bar -->
+        <SeekBar
+            android:id="@+id/video_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="4dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/custom_seekbar_progress"
+            android:thumb="@drawable/custom_thumb" />
+
+        <!-- Play Control Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentBottom="true">
+
+            <!-- -10 Seconds Button -->
+            <ImageButton
+                android:id="@+id/rewind_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/baseline_replay_10_24"
+                android:contentDescription="Rewind 10 Seconds"
+                android:background="@drawable/vintage_button_background"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                android:elevation="6dp" />
+
+            <!-- Play/Pause Button -->
+            <ImageButton
+                android:id="@+id/play_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/baseline_play_circle_24"
+                android:contentDescription="Play/Pause"
+                android:background="@drawable/vintage_button_background"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:elevation="6dp" />
+
+            <!-- +10 Seconds Button -->
+            <ImageButton
+                android:id="@+id/forward_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/baseline_forward_10_24"
+                android:contentDescription="Forward 10 Seconds"
+                android:background="@drawable/vintage_button_background"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="10dp"
+                android:elevation="6dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

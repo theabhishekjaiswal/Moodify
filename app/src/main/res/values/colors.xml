@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background">#F5F5F5</color>
+    <color name="primary">#6200EE</color>
+    <color name="textPrimary">#000000</color>
+    <color name="textSecondary">#757575</color>
+    <color name="primary_dark">#3700B3</color>
+
+    <color name="vintage_brown">#084951</color> <!-- Dark teal for prominent UI elements -->
+    <color name="vintage_button">#0A9BA6</color> <!-- Teal for buttons -->
+    <color name="vintage_text">#05343E</color> <!-- Darker teal for text readability -->
+    <color name="vintage_hint">#6B8D9A</color> <!-- Muted teal for hint text -->
+
+
+</resources>

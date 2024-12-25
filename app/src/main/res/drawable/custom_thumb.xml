@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="#0A9BA6"
+    android:endColor="#084951"
+    android:angle="45" />
+    <corners android:radius="12dp" /> <!-- Slightly smaller rounded thumb -->
+    <stroke android:width="0.5dp" android:color="#E7F4FA" /> <!-- Subtle light blue border -->
+    <size android:width="12dp" android:height="12dp" /> <!-- Smaller thumb size -->
+    <padding android:left="4dp" android:right="4dp" />
+</shape>

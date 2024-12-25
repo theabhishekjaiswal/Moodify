@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:radius="8dp"
+    android:elevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:background="@drawable/vintage_background">
+
+        <!-- Background Image -->
+        <ImageView
+            android:id="@+id/moodImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+
+        <!-- Custom Text for Mood -->
+        <TextView
+            android:id="@+id/moodText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#80000000"
+            android:padding="8dp"
+            android:text="Custom Mood Text"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:fontFamily="@font/alex_brush"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
